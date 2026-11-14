@@ -96,6 +96,44 @@ img{max-width:100%;height:auto}
     padding: 10px;
   }
 }
+
+/* Mobile announcement layout: label above scrolling text */
+@media (max-width:680px) {
+  .news-ticker {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    min-height:0;
+    overflow:hidden;
+  }
+  .news-label {
+    grid-column:1 / -1;
+    display:block;
+    width:100%;
+    max-width:none;
+    padding:7px 12px;
+    font-size:15px;
+    line-height:1.4;
+    text-align:center;
+    letter-spacing:.06em;
+  }
+  .news-window {
+    grid-column:1;
+    min-width:0;
+    overflow:hidden;
+  }
+  .news-message {
+    font-size:15px;
+    line-height:1.5;
+  }
+  .ticker-pause {
+    grid-column:2;
+    margin:6px 8px;
+    padding:8px 10px;
+    font-size:12px;
+    white-space:nowrap;
+  }
+}
 </style>
 <main><section class="welcome" id="about"><div class="eyebrow">Welcome to our community</div><h1>United in Purpose.<br>Powerful in Action.</h1><p class="lead">Celebrating Ghanaian heritage, strengthening community bonds and inspiring the next generation in Liverpool.</p><p>Liverpool Kingmakers is a community initiative seeking to promote culture, unity, leadership and positive engagement across Liverpool.</p><a class="button" href="#priorities">Discover Our Mission</a></section><section class="section" id="priorities"><div class="eyebrow">What matters to us</div><h2>Our Community Priorities</h2><p>Building a stronger future while honouring the traditions and values that connect us.</p><div class="grid"><article class="tile"><h3>Culture & Heritage</h3><p>Celebrating Ghanaian traditions, history and identity through cultural engagement and education.</p></article><article class="tile"><h3>Unity & Leadership</h3><p>Encouraging collaboration, mutual respect and meaningful dialogue across the community.</p></article><article class="tile"><h3>Youth & Opportunity</h3><p>Supporting ideas that help young people connect with their heritage and develop their potential.</p></article></div></section><section class="dark" id="leadership"><div class="eyebrow">Our traditions</div><h2>Respecting Our Heritage</h2><p>We value the role of elders, cultural traditions and community leadership. We seek constructive dialogue about how these values can serve present and future generations.</p></section>
 <section id="enstoolment" style="
